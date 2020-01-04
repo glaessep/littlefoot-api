@@ -150,8 +150,8 @@
         "signature": "779da0aa21181b3b5faf9c38ce99e74bef584252e21816215cf9807630cff564"
       },
       "./src/authaccount/authaccountdefinition.ts": {
-        "version": "79d2dd15ddbc0a7f0efddbca89737431c6c4ba6660e7c36a1dc08df17d591999",
-        "signature": "02d4df7a4eb7e37f748f4d20542da6d75664f70c87e406137b5577b4e4be5a56"
+        "version": "8a098da565540a3e7c18be2d349516c9ac972ffcc2b4168b86b02595a6920774",
+        "signature": "c3da1d32b77ebe6f700e8dc5d9d9bde5604004f9d9b4834f10739a80dc77b575"
       },
       "./node_modules/@types/node/globals.d.ts": {
         "version": "ad77e6a294669d9c365407829ebfb73a6645147bd42668679b8f378e7dd03765",
