@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npx rimraf ./dist && npx tsc && npm run lint",
+    "build": "npm run clean && npx tsc && npm run lint",
+    "clean": "rimraf ./dist tsconfig.tsbuildinfo",
     "lint": "tsc --noEmit && eslint \"**/*.{js,jsx,ts,tsx}\" --quiet --fix"
   },
   "dependencies": {
