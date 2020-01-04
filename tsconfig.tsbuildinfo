@@ -162,8 +162,8 @@
         "signature": "380f41fe38b2f43127e842bf1e37a40c37b22d16d70cc2c4f779cb01376ccb91"
       },
       "./src/resourcepermission/index.ts": {
-        "version": "159c592ec025d90bed4fddfdb5e505bb64874a6489c66ee2cd4f726dbbf18258",
-        "signature": "18a12b319a6fda90c8f6541b13b972aba70fe3fa0cc19f9294a78983aa3a399a"
+        "version": "0d85efe0b4025aff991a7cf673048b6af34a62a010ba4ec0a9bc293557f663de",
+        "signature": "3f8e59542ef2d56e308072a3b8222d30ce7093fd93c594ae73dc247c1eec95e6"
       },
       "./src/authaccount/authtoken.ts": {
         "version": "0afa2d736a25b7dd4fcc6048067c4f8f0be8c105f1e54d5ac061ec66fe24aaf8",
@@ -683,6 +683,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/resourcepermission/index.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts",
         "./src/resourcepermission/resourcepermissiondefinition.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1417,18 +1418,19 @@
         "./src/resourcepermission/resourcepermissionmode.ts",
         "./src/resourcepermission/resourcepermissiondefinition.ts"
       ],
-      "./src/resourcepermission/resourcepermissiondefinition.ts": [
-        "./src/resourcepermission/resourcepermissionmode.ts"
-      ],
-      "./src/resourcepermission/_resourcepermissions.ts": [
-        "./src/resourcepermission/resourcepermissiondefinition.ts"
-      ],
       "./src/resourcepermission/index.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts",
         "./src/resourcepermission/resourcepermissiondefinition.ts"
       ],
       "./src/authaccount/authaccountpermissiondefinition.ts": [
         "./src/authaccount/authtoken.ts",
         "./src/resourcepermission/index.ts"
+      ],
+      "./src/resourcepermission/resourcepermissiondefinition.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts"
+      ],
+      "./src/resourcepermission/_resourcepermissions.ts": [
+        "./src/resourcepermission/resourcepermissiondefinition.ts"
       ],
       "./node_modules/@types/node/globals.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
