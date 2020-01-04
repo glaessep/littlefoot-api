@@ -185,6 +185,18 @@
         "version": "7e7617a10daa917e0c2ea7976ce9de18ce581f597209ef40918e263ff7ca37c9",
         "signature": "e417b6ccc2bbf94b2cc7711139e96bd7f334bd099604b873e6669a01cbffa885"
       },
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": {
+        "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
+        "signature": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c"
+      },
+      "./node_modules/@types/json-schema/index.d.ts": {
+        "version": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1",
+        "signature": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1"
+      },
+      "./node_modules/@types/json5/index.d.ts": {
+        "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
+        "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538"
+      },
       "./node_modules/@types/node/globals.d.ts": {
         "version": "ad77e6a294669d9c365407829ebfb73a6645147bd42668679b8f378e7dd03765",
         "signature": "ad77e6a294669d9c365407829ebfb73a6645147bd42668679b8f378e7dd03765"
@@ -368,46 +380,6 @@
       "./node_modules/@types/uuid/interfaces.d.ts": {
         "version": "1ea35410428b662835f11e9df76672cb8b76c37807c4593df59a0f40d76cf137",
         "signature": "1ea35410428b662835f11e9df76672cb8b76c37807c4593df59a0f40d76cf137"
-      },
-      "./node_modules/@types/uuid/v4.d.ts": {
-        "version": "92a833e8bc8549bcfdeb41bb2ad0981584bbaa84f77ec42d561ce15e9e0f4261",
-        "signature": "92a833e8bc8549bcfdeb41bb2ad0981584bbaa84f77ec42d561ce15e9e0f4261"
-      },
-      "./src/authaccount/_authaccount.ts": {
-        "version": "2ed1f8e426f1dee5d94cb580c34284eaaacb3de2fbbf9cf73d8710b74b649fed",
-        "signature": "700d0e4738c29ba9b35732424a3889efe2824b2c1298a522e147cb1570f09594"
-      },
-      "./src/resourcepermission/_resourcepermission.ts": {
-        "version": "45abdc6cebc678338adaa51dd7b36b1b57f3d3c7a324e95372ff4480f6d4c0c6",
-        "signature": "59ec760594cc5d731db0e4ccd0782ce26553ab9aeb758b8674ba88a442aa4602"
-      },
-      "./src/resourcepermission/_resourcepermissionresult.ts": {
-        "version": "e6d8156d40af76c277ecae3d5eac52288e0e93d1de2d0ae9ab86c93bdee43438",
-        "signature": "f28260943c8c5955df2610f3d2cc439accd9903a7191ad61ebd02117b04dc052"
-      },
-      "./src/resourcepermission/_resourcepermissions.ts": {
-        "version": "9e6371bc6a56a5f4c7d2e60507fcafe4b004678926ed0d6f0b40c082a37dfc51",
-        "signature": "6d6b16f0488dd463354765b2f66e3a07ce4efc8be2e06c004d1d9be01a9ebfac"
-      },
-      "./src/resourcepermission/_resourcepermissionsresult.ts": {
-        "version": "57967fbe5e8ea5626f853d7be4beb87492f0c9695d2730340d57c6c9055fc7c8",
-        "signature": "0c1935c435873f6cb450415cc7231f12124c36a63dc649a2cb07cc1961732e26"
-      },
-      "./src/base/id.ts": {
-        "version": "a4050e28f5ec192593c290095aae7f4f1c98fc457abefee8665bccb49d78fc6e",
-        "signature": "b579ff3ca43bdf1a3319ac1a73bc5407a82a4f8441bc1be2e8e36283230f0cd6"
-      },
-      "./node_modules/@types/eslint-visitor-keys/index.d.ts": {
-        "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
-        "signature": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c"
-      },
-      "./node_modules/@types/json-schema/index.d.ts": {
-        "version": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1",
-        "signature": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1"
-      },
-      "./node_modules/@types/json5/index.d.ts": {
-        "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
-        "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538"
       },
       "./node_modules/@types/uuid/index.d.ts": {
         "version": "b6327a7f4b680d24fb22b9c1816f53d4d9c556a616140711bb2db5a5c2d09439",
@@ -732,6 +704,24 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/json-schema/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/json5/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./node_modules/@types/node/globals.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1094,76 +1084,6 @@
       ],
       "./node_modules/@types/uuid/interfaces.d.ts": [
         "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/uuid/v4.d.ts": [
-        "./node_modules/@types/uuid/interfaces.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/authaccount/_authaccount.ts": [
-        "./src/authaccount/authaccountdefinition.ts",
-        "./node_modules/@types/uuid/v4.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/resourcepermission/_resourcepermission.ts": [
-        "./src/resourcepermission/resourcepermissiondefinition.ts",
-        "./src/resourcepermission/resourcepermissionmode.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/resourcepermission/_resourcepermissionresult.ts": [
-        "./src/base/index.ts",
-        "./src/resourcepermission/resourcepermissiondefinition.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/resourcepermission/_resourcepermissions.ts": [
-        "./src/resourcepermission/resourcepermissiondefinition.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/resourcepermission/_resourcepermissionsresult.ts": [
-        "./src/resourcepermission/_resourcepermissions.ts",
-        "./src/base/index.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/base/id.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/json-schema/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/json5/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1380,14 +1300,6 @@
         "./src/base/result.ts",
         "./src/base/status.ts"
       ],
-      "./src/resourcepermission/_resourcepermissionsresult.ts": [
-        "./src/base/index.ts",
-        "./src/resourcepermission/_resourcepermissions.ts"
-      ],
-      "./src/resourcepermission/_resourcepermissionresult.ts": [
-        "./src/base/index.ts",
-        "./src/resourcepermission/resourcepermissiondefinition.ts"
-      ],
       "./src/index.ts": [
         "./src/base/index.ts",
         "./src/authaccount/index.ts",
@@ -1411,13 +1323,6 @@
       "./src/base/result.ts": [
         "./src/base/status.ts"
       ],
-      "./src/authaccount/_authaccount.ts": [
-        "./src/authaccount/authaccountdefinition.ts"
-      ],
-      "./src/resourcepermission/_resourcepermission.ts": [
-        "./src/resourcepermission/resourcepermissionmode.ts",
-        "./src/resourcepermission/resourcepermissiondefinition.ts"
-      ],
       "./src/resourcepermission/index.ts": [
         "./src/resourcepermission/resourcepermissionmode.ts",
         "./src/resourcepermission/resourcepermissiondefinition.ts"
@@ -1429,8 +1334,23 @@
       "./src/resourcepermission/resourcepermissiondefinition.ts": [
         "./src/resourcepermission/resourcepermissionmode.ts"
       ],
-      "./src/resourcepermission/_resourcepermissions.ts": [
-        "./src/resourcepermission/resourcepermissiondefinition.ts"
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/json-schema/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/json5/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./node_modules/@types/node/globals.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -1504,13 +1424,6 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./node_modules/@types/uuid/index.d.ts": [
-        "./node_modules/@types/uuid/interfaces.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/uuid/v4.d.ts": [
         "./node_modules/@types/uuid/interfaces.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1722,24 +1635,6 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./node_modules/@types/json5/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/json-schema/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "./node_modules/@types/node/ts3.2/globals.d.ts": [
         "./node_modules/@types/node/globals.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1848,6 +1743,9 @@
       "./src/authaccount/authaccountpermissionresult.ts",
       "./src/authaccount/index.ts",
       "./src/index.ts",
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts",
+      "./node_modules/@types/json-schema/index.d.ts",
+      "./node_modules/@types/json5/index.d.ts",
       "./node_modules/@types/node/globals.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
@@ -1894,16 +1792,6 @@
       "./node_modules/@types/node/ts3.2/globals.d.ts",
       "./node_modules/@types/node/ts3.2/index.d.ts",
       "./node_modules/@types/uuid/interfaces.d.ts",
-      "./node_modules/@types/uuid/v4.d.ts",
-      "./src/authaccount/_authaccount.ts",
-      "./src/resourcepermission/_resourcepermission.ts",
-      "./src/resourcepermission/_resourcepermissionresult.ts",
-      "./src/resourcepermission/_resourcepermissions.ts",
-      "./src/resourcepermission/_resourcepermissionsresult.ts",
-      "./src/base/id.ts",
-      "./node_modules/@types/eslint-visitor-keys/index.d.ts",
-      "./node_modules/@types/json-schema/index.d.ts",
-      "./node_modules/@types/json5/index.d.ts",
       "./node_modules/@types/uuid/index.d.ts",
       "./node_modules/typescript/lib/lib.es2015.d.ts",
       "./node_modules/typescript/lib/lib.es2016.d.ts",
