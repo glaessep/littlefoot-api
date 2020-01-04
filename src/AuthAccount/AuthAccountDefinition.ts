@@ -1,17 +1,9 @@
 export interface AuthAccountDefinition {
-  versoin: number;
-  email: string;
-  emailVerified: boolean;
-  verifySecret: string;
-  encrypted: string;
-  userId: string;
-
-  // constructor(
-  //   versoin: number,
-  //   email: string,
-  //   emailVerified: boolean,
-  //   verifySecret: string,
-  //   encrypted: string,
-  //   userId: string,
-  // ) {}
+  readonly id?: string;
+  readonly versoin: number;
+  readonly email: string;
+  readonly emailVerified: boolean;
+  // readonly verifySecret: string;
+  // readonly encrypted: string;
+  readonly userId: string;
 }

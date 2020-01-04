@@ -1,3 +1,3 @@
-import { Result, Id } from '../base';
-import { AuthAccount } from './AuthAccount';
-export class AuthAccountResult extends Result<AuthAccount & Id> {}
+import { Result } from '../base';
+import { AuthAccountDefinition } from './AuthAccountDefinition';
+export class AuthAccountResult extends Result<AuthAccountDefinition> {}
