@@ -1,4 +1,5 @@
-import { ResourcePermissionDefinition, ResourcePermissionMode } from './ResourcePermissionDefinition';
+import { ResourcePermissionDefinition } from './ResourcePermissionDefinition';
+import { ResourcePermissionMode } from './ResourcePermissionMode';
 
 export class ResourcePermission implements ResourcePermissionDefinition {
   constructor(

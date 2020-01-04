@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm run clean && npx tsc && npm run lint",
     "clean": "rimraf ./dist tsconfig.tsbuildinfo",
-    "publish:patch": "npm build && npm version patch && git push --follow-tags && npm publish",
+    "publish:patch": "npm run build && npm version patch && git push --follow-tags && npm publish",
     "lint": "tsc --noEmit && eslint \"**/*.{js,jsx,ts,tsx}\" --quiet --fix"
   },
   "dependencies": {

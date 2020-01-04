@@ -153,9 +153,13 @@
         "version": "530e81622e469cd6b513d1cfd63e9331c9f0b842f6e70c40cbd5c11b3c95ad83",
         "signature": "0a057997e365a200caf55d4b819ef6f097f8a63ed272f559fc90d8c6590f1895"
       },
+      "./src/resourcepermission/resourcepermissionmode.ts": {
+        "version": "f60c78c7810a29357f35361d73c2ab28dde661ac14538b22c44ffc2842c74025",
+        "signature": "48132268a5693e96561efdf17691a16b009355258c1a08dc148ae7409073b48e"
+      },
       "./src/resourcepermission/resourcepermissiondefinition.ts": {
-        "version": "5d74d9cc503ba023003f7f19cdf096a9f91483b259b9d4f70bf2fdc819b0c648",
-        "signature": "5f8fd04a60d022e5f0cfdcb456d86643d27edb3e70653a6838fd0b5dcdccbe31"
+        "version": "e34367fbdf28dc83afae731675b15cdc672553647985ca87c74bf14e8f0334a5",
+        "signature": "380f41fe38b2f43127e842bf1e37a40c37b22d16d70cc2c4f779cb01376ccb91"
       },
       "./src/resourcepermission/index.ts": {
         "version": "159c592ec025d90bed4fddfdb5e505bb64874a6489c66ee2cd4f726dbbf18258",
@@ -374,8 +378,8 @@
         "signature": "700d0e4738c29ba9b35732424a3889efe2824b2c1298a522e147cb1570f09594"
       },
       "./src/resourcepermission/_resourcepermission.ts": {
-        "version": "66317595638e5871678c1599af06b2d2c46b7fbf4472554f44784ade82be7335",
-        "signature": "29b21c018f2689a944ad79655d7e8323fccda94160d2dcfba6f82b445dcd041c"
+        "version": "45abdc6cebc678338adaa51dd7b36b1b57f3d3c7a324e95372ff4480f6d4c0c6",
+        "signature": "59ec760594cc5d731db0e4ccd0782ce26553ab9aeb758b8674ba88a442aa4602"
       },
       "./src/resourcepermission/_resourcepermissionresult.ts": {
         "version": "e6d8156d40af76c277ecae3d5eac52288e0e93d1de2d0ae9ab86c93bdee43438",
@@ -665,7 +669,14 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./src/resourcepermission/resourcepermissionmode.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/resourcepermission/resourcepermissiondefinition.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1104,6 +1115,7 @@
       ],
       "./src/resourcepermission/_resourcepermission.ts": [
         "./src/resourcepermission/resourcepermissiondefinition.ts",
+        "./src/resourcepermission/resourcepermissionmode.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1401,10 +1413,14 @@
       "./src/authaccount/_authaccount.ts": [
         "./src/authaccount/authaccountdefinition.ts"
       ],
-      "./src/resourcepermission/_resourcepermissions.ts": [
+      "./src/resourcepermission/_resourcepermission.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts",
         "./src/resourcepermission/resourcepermissiondefinition.ts"
       ],
-      "./src/resourcepermission/_resourcepermission.ts": [
+      "./src/resourcepermission/resourcepermissiondefinition.ts": [
+        "./src/resourcepermission/resourcepermissionmode.ts"
+      ],
+      "./src/resourcepermission/_resourcepermissions.ts": [
         "./src/resourcepermission/resourcepermissiondefinition.ts"
       ],
       "./src/resourcepermission/index.ts": [
@@ -1822,6 +1838,7 @@
       "./src/base/index.ts",
       "./src/authaccount/authaccountdefinition.ts",
       "./src/authaccount/authaccountresult.ts",
+      "./src/resourcepermission/resourcepermissionmode.ts",
       "./src/resourcepermission/resourcepermissiondefinition.ts",
       "./src/resourcepermission/index.ts",
       "./src/authaccount/authtoken.ts",
