@@ -25,6 +25,20 @@ steps:
 
 - task: CopyFiles@2
   inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '*.tgz'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/npm'
+  displayName: 'Copy npm package'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    ArtifactName: 'npm'
+    publishLocation: 'Container'
+  displayName: 'Publish npm package as artifacts'
+
+- task: CopyFiles@2
+  inputs:
     SourceFolder: '$(Build.SourcesDirectory)/dist'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
@@ -36,11 +50,3 @@ steps:
     ArtifactName: 'dist'
     publishLocation: 'Container'
   displayName: 'Publish dist files as artifacts'
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '*.tgz'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/npm'
-  displayName: 'Copy npm package'
-
