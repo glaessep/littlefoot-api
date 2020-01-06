@@ -25,7 +25,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourceDirectory)/dist'
+    SourceFolder: '$(Build.SourcesDirectory)/dist'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
 
