@@ -48,19 +48,19 @@ stages:
           publishLocation: 'Container'
         displayName: 'Publish npm package as artifacts'
 
-      - task: CopyFiles@2
-        inputs:
-          SourceFolder: '$(Build.SourcesDirectory)/dist'
-          Contents: '**'
-          TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
-        displayName: 'Copy dist output'
+      # - task: CopyFiles@2
+      #   inputs:
+      #     SourceFolder: '$(Build.SourcesDirectory)/dist'
+      #     Contents: '**'
+      #     TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
+      #   displayName: 'Copy dist output'
 
-      - task: PublishBuildArtifacts@1
-        inputs:
-          PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
-          ArtifactName: 'dist'
-          publishLocation: 'Container'
-        displayName: 'Publish dist files as artifacts'
+      # - task: PublishBuildArtifacts@1
+      #   inputs:
+      #     PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
+      #     ArtifactName: 'dist'
+      #     publishLocation: 'Container'
+      #   displayName: 'Publish dist files as artifacts'
         
 - stage: Deploy
   jobs:
