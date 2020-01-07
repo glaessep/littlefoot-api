@@ -62,3 +62,11 @@ stages:
           publishLocation: 'Container'
         displayName: 'Publish dist files as artifacts'
         
+- stage: Deploy
+  jobs:
+    - job: Deploy
+
+      pool:
+        vmImage: 'ubuntu-latest'
+
+      steps:
