@@ -12,8 +12,9 @@ pool:
 steps:
 
 - bash: |
-    ls $(Build.SourcesDirectory)/*rc
-
+    cd $(Build.SourcesDirectory)
+    ls *.tgz
+    echo $[ls *.tgz]
 
 - bash: |
     echo "##vso[task.setvariable variable=sauce] $[ls $(Build.SourcesDirectory)/*rc]"
