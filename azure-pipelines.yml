@@ -8,51 +8,57 @@ trigger:
     include:
     - v*
 
-pool:
-  vmImage: 'ubuntu-latest'
+stages:
+- stage: Build
+  jobs:
+    - job: Build
 
-steps:
-- task: UseNode@1
-  inputs:
-    version: '12.x'
+      pool:
+        vmImage: 'ubuntu-latest'
 
-- task: Npm@1
-  inputs:
-    command: 'install'
-  displayName: 'npm install'
+      steps:
+      - task: UseNode@1
+        inputs:
+          version: '12.x'
 
-- script: |
-    npm run build
-  displayName: 'npm run build'
+      - task: Npm@1
+        inputs:
+          command: 'install'
+        displayName: 'npm install'
 
-- script: |
-    npm pack
-  displayName: 'Package for npm release'
+      - script: |
+          npm run build
+        displayName: 'npm run build'
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '*.tgz'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/npm'
-  displayName: 'Copy npm package'
+      - script: |
+          npm pack
+        displayName: 'Package for npm release'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
-    ArtifactName: 'npm'
-    publishLocation: 'Container'
-  displayName: 'Publish npm package as artifacts'
+      - task: CopyFiles@2
+        inputs:
+          SourceFolder: '$(Build.SourcesDirectory)'
+          Contents: '*.tgz'
+          TargetFolder: '$(Build.ArtifactStagingDirectory)/npm'
+        displayName: 'Copy npm package'
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/dist'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
-  displayName: 'Copy dist output'
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+          ArtifactName: 'npm'
+          publishLocation: 'Container'
+        displayName: 'Publish npm package as artifacts'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
-    ArtifactName: 'dist'
-    publishLocation: 'Container'
-  displayName: 'Publish dist files as artifacts'
+      - task: CopyFiles@2
+        inputs:
+          SourceFolder: '$(Build.SourcesDirectory)/dist'
+          Contents: '**'
+          TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
+        displayName: 'Copy dist output'
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
+          ArtifactName: 'dist'
+          publishLocation: 'Container'
+        displayName: 'Publish dist files as artifacts'
+        
