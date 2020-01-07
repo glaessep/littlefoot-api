@@ -70,10 +70,6 @@ stages:
         vmImage: 'ubuntu-latest'
 
       steps:
-      - script: |
-          cd $(Build.SourcesDirectory)
-          pName=$(ls *.tgz) 
-          echo "##vso[task.setvariable variable=packageName]$pName"
 
       - task: DownloadBuildArtifacts@0
         inputs:
@@ -82,9 +78,20 @@ stages:
           artifactName: 'npm'
           downloadPath: '$(System.ArtifactsDirectory)'
 
-      - task: npmAuthenticate@0
-        inputs:
-          workingFile: '$(Build.SourcesDirectory)/.npmrc'
-
       - script: |
-          npm publish $(System.ArtifactsDirectory)/npm/$(packageName)
+          cd $(System.ArtifactsDirectory)
+          pName=$(ls *.tgz)
+          echo "##vso[task.setvariable variable=packageName]$pName"
+
+      - task: ExtractFiles@1
+        inputs:
+          archiveFilePatterns: '$(System.ArtifactsDirectory)/npm/$(packageName)'
+          destinationFolder: '$(System.DefaultWorkingDirectory)/dist'
+          cleanDestinationFolder: true
+
+      - task: Npm@1
+        inputs:
+          command: 'publish'
+          workingDir: '$(System.DefaultWorkingDirectory)/dist'
+          publishRegistry: 'useFeed'
+          publishFeed: '6b012f77-8e3a-4f4e-a986-9f88bfc74126/60c533ae-4de6-403b-9bde-ecadc2b398bf'
