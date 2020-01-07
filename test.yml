@@ -13,11 +13,6 @@ steps:
 
 - bash: |
     cd $(Build.SourcesDirectory)
-    ls *.tgz
-    echo $[ls *.tgz]
+    pName=$(ls *.tgz) 
+    echo "##vso[task.setvariable variable=sauce] $(pName)"
 
-- bash: |
-    echo "##vso[task.setvariable variable=sauce] $[ls $(Build.SourcesDirectory)/*rc]"
-
-- bash: |
-    echo variable $[sauce]
