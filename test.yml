@@ -12,13 +12,11 @@ pool:
 steps:
 
 - bash: |
-    echo "Hello World"
-    echo "AGENT_WORKFOLDER is $(Build.SourcesDirectory)"
-    echo "AGENT_WORKFOLDER contents:"
-    ls -1 $(Build.SourcesDirectory)
+    ls $(Build.SourcesDirectory)/*rc
+
 
 - bash: |
-    echo "##vso[task.setvariable variable=sauce] $[ls *.tsbuildinfo]"
+    echo "##vso[task.setvariable variable=sauce] $[ls $(Build.SourcesDirectory)/*rc]"
 
 - bash: |
     echo variable $[sauce]
