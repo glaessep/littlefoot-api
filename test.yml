@@ -11,6 +11,11 @@ pool:
 
 steps:
 
-- script: |
-    ls npm/*.tgz
-  displayName: 'Run a multi-line script'
+- bash: |
+    $[ls *.tsbuildinfo]
+
+- bash: |
+    echo "##vso[task.setvariable variable=sauce] $[ls .tsbuildinfo]"
+
+- bash: |
+    echo variable $[sauce]
