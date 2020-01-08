@@ -48,20 +48,6 @@ stages:
           publishLocation: 'Container'
         displayName: 'Publish npm package as artifacts'
 
-      # - task: CopyFiles@2
-      #   inputs:
-      #     SourceFolder: '$(Build.SourcesDirectory)/dist'
-      #     Contents: '**'
-      #     TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
-      #   displayName: 'Copy dist output'
-
-      # - task: PublishBuildArtifacts@1
-      #   inputs:
-      #     PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
-      #     ArtifactName: 'dist'
-      #     publishLocation: 'Container'
-      #   displayName: 'Publish dist files as artifacts'
-        
 - stage: Deploy
   jobs:
     - job: Deploy
@@ -70,7 +56,6 @@ stages:
         vmImage: 'ubuntu-latest'
 
       steps:
-
       - task: DownloadBuildArtifacts@0
         inputs:
           buildType: 'current'
@@ -83,6 +68,7 @@ stages:
           pName=$(ls *.tgz)
           echo "##vso[task.setvariable variable=packageDirectory]$(System.ArtifactsDirectory)/npm/$pName"
           echo Package directory: $(packageDirectory)
+        displayName: 'Get PackagePath'
 
       - task: ExtractFiles@1
         inputs:
