@@ -79,14 +79,14 @@ stages:
           downloadPath: '$(System.ArtifactsDirectory)'
 
       - bash: |
-          cd $(System.ArtifactsDirectory)
+          cd $(System.ArtifactsDirectory)/npm
           pName=$(ls *.tgz)
-          echo "##vso[task.setvariable variable=packageName]$pName"
-          echo $(System.ArtifactsDirectory)/npm/$(packageName)
+          echo "##vso[task.setvariable variable=packageDirectory]$(System.ArtifactsDirectory)/npm/$pName"
+          echo Package directory: $(packageDirectory)
 
       - task: ExtractFiles@1
         inputs:
-          archiveFilePatterns: '$(System.ArtifactsDirectory)/npm/$(packageName)'
+          archiveFilePatterns: '$(packageDirectory)'
           destinationFolder: '$(System.DefaultWorkingDirectory)/dist'
           cleanDestinationFolder: true
 
