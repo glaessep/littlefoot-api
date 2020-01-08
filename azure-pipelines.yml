@@ -93,6 +93,6 @@ stages:
       - task: Npm@1
         inputs:
           command: 'publish'
-          workingDir: '$(System.DefaultWorkingDirectory)/dist'
+          workingDir: '$(System.DefaultWorkingDirectory)/dist/package'
           publishRegistry: 'useFeed'
           publishFeed: '6b012f77-8e3a-4f4e-a986-9f88bfc74126/60c533ae-4de6-403b-9bde-ecadc2b398bf'
